@@ -145,6 +145,7 @@ nav>div {
 
 .hero {
     margin: 1em 0 5em;
+    margin-top: -4px;
 }
 
 
@@ -160,9 +161,6 @@ nav>div {
     color: var(--white);
 
     padding: 0 2em;
-
-
-
     position: relative;
 }
 
@@ -183,7 +181,7 @@ nav>div {
     flex-direction: column;
     width: 100%;
     justify-content: center;
-
+    margin-top: -80px;
     background: linear-gradient(to right, rgba(86, 128, 233, 0.55), rgba(132, 206, 235, 0.5));
 }
 
@@ -243,6 +241,118 @@ nav>div {
 }
 
 /* end of about us  */
+/* start of commitment  */
+#commitment{
+    height: 100vh;
+    width: auto;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: sp;
+}
+#commitment h1{
+    
+    color: var(--primary);
+    font-size: 35px;
+    margin-bottom: 40px;
+
+}
+
+#commitment ul li{
+    display: flex;
+    flex-direction: row;
+    
+}
+#commitment ul li .fa-solid{
+    color: var(--primary);
+    height: auto;
+    width: 15%;
+    margin: auto;
+}
+#commitment ul li .text{
+    width: 70%;
+}
+#commitment ul li .text p{
+    font-size: small;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+/* end of commitment  */
+
+/* start of services */
+
+#services{
+    height: 50vh;
+    margin-top: 100px;
+    margin-right:20px ;
+    margin-left:20px ;
+
+
+    
+}
+#services .heading{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    padding: 20px;
+    width: 80vw;
+    border-bottom: var(--primary) 3px solid;
+    border-radius: 20px;
+
+    font-size: 26px;
+    color: var(--secondary);
+
+
+    
+}
+
+#services .heading h1{
+    font-weight: 700;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  padding: 20px 20px 15px 15px;
+  margin-bottom: 30px;
+  border-radius: .9em;
+
+}
+.swiper-slide .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+.swiper-slide .card img{
+    height: 30vh;
+    width: auto;
+}
+
+/* end of services  */
 
 @media(min-width:670px) {
     .container {
@@ -332,6 +442,59 @@ nav>div {
     }
 
     /* end of about us  */
+    /* start of commitment  */
+    #commitment{
+        height: 40vh;
+        width: auto;
+        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: sp;
+    }
+    #commitment h1{
+        
+        color: var(--primary);
+        font-size: 35px;
+        margin-bottom: 40px;
+    
+    }
+    #commitment ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+
+        margin: auto;
+    }
+    #commitment ul li{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        padding: 20px;
+
+        
+    }
+    #commitment ul li .fa-solid{
+        color: var(--primary);
+        height: auto;
+        width: 15%;
+        margin: auto;
+    }
+    #commitment ul li .text{
+        width: 70%;
+    }
+    #commitment ul li .text p{
+        font-size: small;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    
+
+    /* end of commitment  */
 
 
 }
