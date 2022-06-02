@@ -243,7 +243,7 @@ nav>div {
 /* end of about us  */
 /* start of commitment  */
 #commitment{
-    height: 100vh;
+    height: auto;
     width: auto;
     margin: 20px;
     margin-top: 50px;
