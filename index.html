@@ -12,6 +12,9 @@
 
   <!-- swiper  -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- animate on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -23,7 +26,7 @@
       <div class="logo">
         <img src="./static/globalnepal.png" alt="logo">
         <div>
-          <h2>GlobalNepal</h2>
+          <h3>GlobalNepal</h3>
           <p>PrintingPress</p>
         </div>
       </div>
@@ -56,7 +59,7 @@
     <div class="mobile-links hide-menu container">
       <a href="#nav">Home</a>
       <a href="#about">About</a>
-      <a href="#testimonials">Feedback</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contacts</a>
     </div>
     <!-- end of mobile links -->
@@ -71,9 +74,9 @@
 
         <div class="swiper-slide">
           <div class="content"
-            style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(2, 2, 2, 0.33)), url('./static/IMG_8294.JPG') top/cover no-repeat;">
+            style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(2, 2, 2, 0.33)), url('./static/IMG_8290.JPG') top/cover no-repeat;">
             <h1>
-              Quality Products within specified time
+              <i class="fa-solid fa-quote-left"></i> Pin your faith on us to print your designs!
             </h1>
 
           </div>
@@ -82,14 +85,23 @@
 
         <div class="swiper-slide">
           <div class="content"
-            style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(2, 2, 2, 0.23)), url('./static/IMG_8294.JPG') top/cover no-repeat;">
+            style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(2, 2, 2, 0.23)), url('./static/IMG_8308.JPG') top/cover no-repeat;">
             <h1>
-              Keep Your Body Fit & Strong With Us
+              <i class="fa-solid fa-quote-left"></i> Enquire now, get amazing discounts on your first print!
             </h1>
 
           </div>
         </div>
 
+        <div class="swiper-slide">
+          <div class="content"
+            style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(2, 2, 2, 0.23)), url('./static/IMG_8309.JPG') top/cover no-repeat;">
+            <h1>
+              <i class="fa-solid fa-quote-left"></i> Always deliver more than expected!
+            </h1>
+
+          </div>
+        </div>
 
       </div>
       <div class="swiper-button-next"></div>
@@ -100,10 +112,9 @@
   <!-- end of carousel -->
   <!-- start of about us  -->
   <section id="aboutus">
-    <div class="container1">
+    <div class="container1 " data-aos="slide-right"data-aos-duration="2700">
       <h1>Quality With Quantity Thats What We're Good At.</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo adipisci delectus inventore consequuntur
-        quisquam!</p>
+      <p>Global Nepal Press Pvt. Ltd. is one of the top Offset Printers in Nepal. We print on all category of paper, art board or duplex board.</p>
       <button type="button" class="btn-rounded"><a
           style="text-decoration:none; font-family: 'Poppins', sans-serif; color:black; font-size: 17px;"
           href="#footer">Get in Touch</a>
@@ -213,8 +224,110 @@
 
   </section>
   <!-- end of services  -->
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0792308963246!2d77.710951414919!3d12.966781790859084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae130f321b2b95%3A0x74b2c05bbc2aac8d!2sCMR%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1644129894396!5m2!1sen!2sin" style="border:0; width:100%; height:40vh; -webkit-filter:grayscale(60%); -moz-filter:grayscale(60%) 
-  -o-filter:grayscale(60%) allowfullscreen="" loading="lazy"></iframe>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,234.7C384,245,480,267,576,261.3C672,256,768,224,864,208C960,192,1056,192,1152,197.3C1248,203,1344,213,1392,218.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  <div class="testimonial-heading">
+    <h1>Testimonials</h1>
+  </div>
+
+
+
+  <section id="testimonials">
+
+   
+
+
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+
+
+          <div class="testimonial-box-container">
+            <div class="testimonial-box">
+              <div class="box-top">
+                <div class="profile">
+                  <div class="profile-img">
+                    <img src="static/muhammad-ali-png-2909.png" alt="">
+                  </div>
+                  <div class="name-user">
+                    <strong>Shreeyanch Shrestha</strong>
+                    <span>shreeyanch@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i> <!-- empty star -->
+                </div>
+
+              </div>
+              <div class="client-comments">
+                <p>Printing Service and quality really great!
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="swiper-slide">
+
+
+          <div class="testimonial-box-container">
+            <div class="testimonial-box">
+              <div class="box-top">
+                <div class="profile">
+                  <div class="profile-img">
+                    <img src="static/rodtang.jpg" alt="">
+                  </div>
+                  <div class="name-user">
+                    <strong>Shreeyanch Shrestha</strong>
+                    <span>shreeyanch@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i> <!-- empty star -->
+                </div>
+
+              </div>
+              <div class="client-comments">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque tempora ab, odio atque totam impedit
+                  accusamus fugit officia vero ea quas architecto quam dolor rem beatae unde placeat, corporis
+                  praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+
+  </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,64C96,64,192,64,288,85.3C384,107,480,149,576,165.3C672,181,768,171,864,165.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+  <!-- end of testimonials -->
+
+
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0792308963246!2d77.710951414919!3d12.966781790859084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae130f321b2b95%3A0x74b2c05bbc2aac8d!2sCMR%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1644129894396!5m2!1sen!2sin" style="border:0; width:100%; height:40vh; -webkit-filter:grayscale(60%); -moz-filter:grayscale(60%);
+  -o-filter:grayscale(60%); 
+  allowfullscreen="loading="lazy"></iframe>
 
 <footer id="contact">
   <div class="footer">
@@ -241,8 +354,8 @@
 <section class="final">
   <div class="social-media"><p>Connect with us on social media</p>
     <div class="media-logos">
-      <i class="fa-brands fa-facebook fa-lg"></i>
-        <i class="fa-brands fa-instagram fa-lg"></i>
+      <a  href="https://www.facebook.com/profile.php?id=100019514202710" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
       </i>
     </div>
   
@@ -262,6 +375,10 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

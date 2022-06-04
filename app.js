@@ -51,6 +51,28 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  var swiper = new Swiper(".testimonial-swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30, 
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+    
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    },
+
+  });
+
   const top = document.querySelector('.top');
 
   top.addEventListener('click', ()=>{
