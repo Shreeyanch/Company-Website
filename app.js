@@ -51,6 +51,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  const top = document.querySelector('.top');
+
+  top.addEventListener('click', ()=>{
+    window.scroll({
+      left:0,
+      top:0,
+      behavior:'smooth'
+    })
+  })
+
 
 
 });

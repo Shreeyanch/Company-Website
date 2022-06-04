@@ -111,6 +111,7 @@ nav>div {
 /* mobile links */
 #nav {
     background: linear-gradient(to right, rgba(86, 128, 233, 0.55), rgba(132, 206, 235, 0.5));
+    
 }
 
 .mobile-links {
@@ -133,7 +134,7 @@ nav>div {
 }
 
 .mobile-links a {
-    color: var(--secondary);
+    color: var(--white);
     font-size: 1.1em;
     letter-spacing: 2px;
 }
@@ -247,11 +248,11 @@ nav>div {
     width: auto;
     margin: 20px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     
     display: flex;
     flex-direction: column;
-    justify-content: sp;
+    
 }
 #commitment h1{
     
@@ -286,74 +287,157 @@ nav>div {
 /* start of services */
 
 #services{
-    height: 50vh;
-    margin-top: 100px;
-    margin-right:20px ;
-    margin-left:20px ;
-
-
-    
-}
-#services .heading{
+    width: 100%;
+    height: auto;
+    margin-top: -86px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    background: url(static/pexels-eberhard-grossgasteiger-2088142.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-bottom: 50px;
+    background-size:cover;
+    margin-bottom: -50px;
+	
+}
+
+#services div{
+    width: 80%;
+}
+
+#services .service-content ul li{
+    margin-top: 30px;
+
     margin-bottom: 30px;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    width: 80vw;
-    border-bottom: var(--primary) 3px solid;
-    border-radius: 20px;
 
-    font-size: 26px;
-    color: var(--secondary);
-
-
-    
-}
-
-#services .heading h1{
-    font-weight: 700;
-}
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    
-    
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-slide .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07);
   transition: 0.3s;
   padding: 20px 20px 15px 15px;
-  margin-bottom: 30px;
+  
   border-radius: .9em;
-
+   
+    
+    
 }
-.swiper-slide .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+#services .service-content ul li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
   }
-.swiper-slide .card img{
-    height: 30vh;
-    width: auto;
+#services .heading h1{
+    margin-top: 30px;
+    display: flex;
+    
+    justify-content: center;
+    padding: 20px;
+    font-size: 35px;
+    color: var(--primary);
+}
+
+#services ul img{
+    height: 200px;
+    width: 250px;
 }
 
 /* end of services  */
+/* start of banner  */
+.banner ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.banner ul li img{
+    margin-top: 20px;
+    height: auto;
+    width: 90%;
+}
+.banner .fb-page{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* end of banner  */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*? footer */
+
+.footer {
+     background: linear-gradient(to right, rgba(86, 128, 233, 0.55), rgba(132, 206, 235, 0.5));
+
+  }
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90%;
+    margin: auto;
+}
+
+.footer ul li{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.footer ul li i{
+   padding: 20px;
+   color: #fff;
+} 
+.footer ul li h1{
+    font-size: 16px;
+}
+  
+.copyright {
+    
+    color: var(--white);
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    line-height: 10px;
+    font-size: 0.9em;
+}
+  
+.copyright span {
+    color: var(--blue);
+}
+  
+.copyright span a{
+    color: inherit;
+}
+.social-media{
+    
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    column-gap: 0px;
+}
+.social-media p{
+    font-size: 17px;
+}
+.final{
+    background-color: var(--dark);
+}
+  /*? footer */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  
+  
 @media(min-width:670px) {
     .container {
         max-width: 85%;
@@ -443,24 +527,8 @@ nav>div {
 
     /* end of about us  */
     /* start of commitment  */
-    #commitment{
-        height: 40vh;
-        width: auto;
-        margin: 20px;
-        margin-top: 50px;
-        margin-bottom: 300px;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: sp;
-    }
-    #commitment h1{
-        
-        color: var(--primary);
-        font-size: 35px;
-        margin-bottom: 40px;
+   
     
-    }
     #commitment ul {
         display: flex;
         flex-direction: row;
@@ -471,30 +539,106 @@ nav>div {
         margin: auto;
     }
     #commitment ul li{
-        display: flex;
-        flex-direction: row;
+        
         width: 30%;
         padding: 20px;
 
         
     }
-    #commitment ul li .fa-solid{
-        color: var(--primary);
-        height: auto;
-        width: 15%;
-        margin: auto;
-    }
-    #commitment ul li .text{
-        width: 70%;
-    }
-    #commitment ul li .text p{
-        font-size: small;
-        padding-bottom: 15px;
-        padding-top: 10px;
-    }
     
 
     /* end of commitment  */
+    
+    /* start of services  */
+    #services{
+        background: url(static/home_agency_section_2-1.jpg);
+        background-attachment: fixed;
+        margin-top: -337px;
+        padding-bottom: 200px;
+        
+        margin-bottom: -230px;
+        
+        
+    
+        
+    }
+    #services .service-content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+    
+        
+    }
+    
+    #services .heading{
+        margin-top: 200px;
+        width: 30vw;
+    
+    
+        
+    }
+    #services div{
+        width: 80%;
+    }
+    #services .service-content ul li{
+        
+    
+        box-shadow: none;
+      
+    }
+    #services .service-content ul li{
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    
+        
+       
+        
+        
+    }
+    /* end of services  */
+
+    /* start of benner  */
+    .banner{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+        justify-content: center;
+        
+
+    }
+    .banner .fb-page{
+        
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .banner ul{
+        margin-left: 50px;
+        width: 70%;
+    }
+    .banner ul li img{
+        
+        height: 200px;
+        width: auto;
+        
+    }
+    
+    /* end of banner  */
+    /* start of footer  */
+    .footer ul{
+        flex-direction: row;
+    }
+    .social-media{
+    
+        
+        flex-direction: row;
+        column-gap: 150px;
+
+    }
+    /* end of footer  */
 
 
 }
