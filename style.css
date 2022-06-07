@@ -452,8 +452,8 @@ nav>div {
 }
 
 .testimonial-heading h1 {
-    font-size: 40px;
-    padding: 10px 20px;
+    font-size: 30px;
+    padding: 25px 20px;
     font-weight: 700;
     color: var(--white);
 }
@@ -948,7 +948,7 @@ nav>div {
     /* start of testimonials */
     .testimonial-heading {
 
-        margin-top: 80px;
+        margin-top: 65px;
     }
 
     #testimonials {
@@ -960,9 +960,10 @@ nav>div {
 
     }
 
-    .testimonial-heading {
+    .testimonial-heading h1{
 
-        margin-bottom: 197px;
+        margin-bottom: 180px;
+       
 
     }
 
